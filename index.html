@@ -662,147 +662,132 @@ footer p { color: var(--gray-500); font-size: 0.85rem; }
 <!-- CREWDESK WAITLIST MODAL -->
 <div id="crewdesk-modal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(5,10,24,0.85);backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:20px;">
   <div style="background:#0D1B3E;border:1px solid #1e2d5a;border-radius:20px;max-width:560px;width:100%;max-height:90vh;overflow-y:auto;padding:48px 40px;position:relative;box-shadow:0 24px 80px rgba(0,0,0,0.6);">
-    <!-- Close button -->
     <button onclick="closeModal()" style="position:absolute;top:20px;right:24px;background:none;border:none;color:#9ca3af;font-size:24px;cursor:pointer;line-height:1;">&#x2715;</button>
-    <!-- Logo -->
     <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
       <svg viewBox="0 0 24 24" fill="#FACC15" stroke="#FACC15" stroke-width="1" width="28" height="28"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
       <span style="font-family:'Inter',sans-serif;font-weight:800;font-size:1.2rem;color:#fff;letter-spacing:-0.5px;">CrewDesk</span>
     </div>
     <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:1.6rem;color:#fff;margin:0 0 8px;line-height:1.2;">Get <span style="color:#FACC15;">Early Access</span></h2>
     <p style="font-family:'Inter',sans-serif;color:#9ca3af;font-size:0.9rem;margin:0 0 32px;">Help us build the right product for you. Takes 60 seconds.</p>
-
     <form id="crewdesk-form" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleSubmit(event)">
       <input type="hidden" name="access_key" value="1a886d4d-8213-44f3-af0f-7b68eedef5b1">
       <input type="hidden" name="subject" value="New CrewDesk Waitlist Signup!">
       <input type="hidden" name="from_name" value="CrewDesk Waitlist">
-      <!-- Q1: Name -->
       <div style="margin-bottom:20px;">
         <label style="font-family:'Inter',sans-serif;font-size:0.8rem;font-weight:600;color:#FACC15;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:8px;">1. Your Name</label>
-        <input type="text" name="name" required placeholder="e.g. Sarah Johnson" style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
+        <input type="text" name="name" required placeholder="e.g. Sarah Johnson" style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
       </div>
-      <!-- Q2: Email -->
       <div style="margin-bottom:20px;">
         <label style="font-family:'Inter',sans-serif;font-size:0.8rem;font-weight:600;color:#FACC15;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:8px;">2. Work Email</label>
-        <input type="email" name="email" required placeholder="e.g. sarah@yourbusiness.com" style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
+        <input type="email" name="email" required placeholder="e.g. sarah@yourbusiness.com" style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
       </div>
-      <!-- Q3: Business -->
       <div style="margin-bottom:20px;">
-        <label style="font-family:'Inter',sans-serif;font-size:0.8rem;font-weight:600;color:#FACC15;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:8px;">3. Business Name & What You Do</label>
-        <input type="text" name="business" required placeholder="e.g. Spark Agency ÃÂ¢ÃÂÃÂ creative production" style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
+        <label style="font-family:'Inter',sans-serif;font-size:0.8rem;font-weight:600;color:#FACC15;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:8px;">3. Business Name &amp; What You Do</label>
+        <input type="text" name="business" required placeholder="e.g. Spark Agency - creative production" style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
       </div>
-      <!-- Q4: Contractors -->
       <div style="margin-bottom:20px;">
         <label style="font-family:'Inter',sans-serif;font-size:0.8rem;font-weight:600;color:#FACC15;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:8px;">4. How many contractors do you work with per year?</label>
-        <select name="contractors" required style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;appearance:none;cursor:pointer;transition:border-color 0.2s;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
+        <select name="contractors" required style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;appearance:none;cursor:pointer;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
           <option value="" disabled selected style="color:#9ca3af;">Select a range...</option>
-          <option value="1-5" style="background:#0D1B3E;">1ÃÂ¢ÃÂÃÂ5</option>
-          <option value="6-20" style="background:#0D1B3E;">6ÃÂ¢ÃÂÃÂ20</option>
-          <option value="21-50" style="background:#0D1B3E;">21ÃÂ¢ÃÂÃÂ50</option>
+          <option value="1-5" style="background:#0D1B3E;">1 - 5</option>
+          <option value="6-20" style="background:#0D1B3E;">6 - 20</option>
+          <option value="21-50" style="background:#0D1B3E;">21 - 50</option>
           <option value="50+" style="background:#0D1B3E;">50+</option>
         </select>
       </div>
-      <!-- Q5: Location -->
       <div style="margin-bottom:20px;">
         <label style="font-family:'Inter',sans-serif;font-size:0.8rem;font-weight:600;color:#FACC15;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:8px;">5. Where are you based?</label>
-        <input type="text" name="location" required placeholder="e.g. London, UK" style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
+        <input type="text" name="location" required placeholder="e.g. London, UK" style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
       </div>
-      <!-- Q6: Would you start now -->
       <div style="margin-bottom:32px;">
         <label style="font-family:'Inter',sans-serif;font-size:0.8rem;font-weight:600;color:#FACC15;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:12px;">6. If CrewDesk launched today, would you start using it?</label>
         <div style="display:flex;gap:12px;flex-wrap:wrap;">
           <label style="flex:1;min-width:120px;cursor:pointer;">
             <input type="radio" name="start_now" value="Yes, immediately" required style="display:none;" onchange="selectRadio(this)">
-            <div class="radio-opt" style="padding:12px 16px;border:1.5px solid #1e2d5a;border-radius:10px;text-align:center;font-family:'Inter',sans-serif;font-size:0.9rem;color:#9ca3af;transition:all 0.2s;cursor:pointer;">ÃÂ¢ÃÂÃÂ¡ Yes, immediately</div>
+            <div class="radio-opt" style="padding:12px 16px;border:1.5px solid #1e2d5a;border-radius:10px;text-align:center;font-family:'Inter',sans-serif;font-size:0.9rem;color:#9ca3af;cursor:pointer;">Yes, immediately</div>
           </label>
           <label style="flex:1;min-width:120px;cursor:pointer;">
             <input type="radio" name="start_now" value="Yes, within 3 months" style="display:none;" onchange="selectRadio(this)">
-            <div class="radio-opt" style="padding:12px 16px;border:1.5px solid #1e2d5a;border-radius:10px;text-align:center;font-family:'Inter',sans-serif;font-size:0.9rem;color:#9ca3af;transition:all 0.2s;cursor:pointer;">ÃÂ°ÃÂÃÂÃÂ Within 3 months</div>
+            <div class="radio-opt" style="padding:12px 16px;border:1.5px solid #1e2d5a;border-radius:10px;text-align:center;font-family:'Inter',sans-serif;font-size:0.9rem;color:#9ca3af;cursor:pointer;">Within 3 months</div>
           </label>
           <label style="flex:1;min-width:120px;cursor:pointer;">
             <input type="radio" name="start_now" value="Maybe, need more info" style="display:none;" onchange="selectRadio(this)">
-            <div class="radio-opt" style="padding:12px 16px;border:1.5px solid #1e2d5a;border-radius:10px;text-align:center;font-family:'Inter',sans-serif;font-size:0.9rem;color:#9ca3af;transition:all 0.2s;cursor:pointer;">ÃÂ°ÃÂÃÂ¤ÃÂ Need more info</div>
+            <div class="radio-opt" style="padding:12px 16px;border:1.5px solid #1e2d5a;border-radius:10px;text-align:center;font-family:'Inter',sans-serif;font-size:0.9rem;color:#9ca3af;cursor:pointer;">Need more info</div>
           </label>
         </div>
       </div>
-      <!-- Submit -->
       <button type="submit" id="submit-btn" style="width:100%;padding:16px;background:#FACC15;color:#0a0f1e;border:none;border-radius:12px;font-family:'Inter',sans-serif;font-weight:800;font-size:1rem;cursor:pointer;transition:all 0.2s;letter-spacing:-0.3px;">
-        Join the Waitlist ÃÂ¢ÃÂÃÂ¡
+        Join the Waitlist
       </button>
       <p style="text-align:center;font-family:'Inter',sans-serif;font-size:0.75rem;color:#4b5563;margin-top:16px;">No spam. Ever. We'll only reach out when we're ready to launch.</p>
     </form>
-
-    <!-- Success message (hidden) -->
     <div id="form-success" style="display:none;text-align:center;padding:40px 0;">
-      <div style="font-size:3rem;margin-bottom:16px;">ÃÂ¢ÃÂÃÂ¡</div>
+      <div style="font-size:3rem;margin-bottom:16px;color:#FACC15;font-weight:900;">&#10003;</div>
       <h3 style="font-family:'Inter',sans-serif;font-weight:800;font-size:1.4rem;color:#fff;margin:0 0 12px;">You're on the list!</h3>
       <p style="font-family:'Inter',sans-serif;color:#9ca3af;font-size:0.95rem;margin:0 0 24px;">We'll be in touch when CrewDesk is ready. Keep an eye on your inbox.</p>
       <button onclick="closeModal()" style="padding:12px 32px;background:#FACC15;color:#0a0f1e;border:none;border-radius:10px;font-family:'Inter',sans-serif;font-weight:700;font-size:0.9rem;cursor:pointer;">Close</button>
     </div>
   </div>
 </div>
-
 <script>
   function openModal(e) {
     if (e) e.preventDefault();
-    const modal = document.getElementById('crewdesk-modal');
+    var modal = document.getElementById('crewdesk-modal');
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
-    // Reset form
     document.getElementById('crewdesk-form').style.display = 'block';
     document.getElementById('form-success').style.display = 'none';
-    document.getElementById('submit-btn').textContent = 'Join the Waitlist ÃÂ¢ÃÂÃÂ¡';
+    document.getElementById('submit-btn').textContent = 'Join the Waitlist';
     document.getElementById('submit-btn').disabled = false;
   }
   function closeModal() {
     document.getElementById('crewdesk-modal').style.display = 'none';
     document.body.style.overflow = '';
   }
-  // Close on backdrop click
   document.getElementById('crewdesk-modal').addEventListener('click', function(e) {
     if (e.target === this) closeModal();
   });
-  // Close on Escape key
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeModal();
   });
-  // Radio button styling
   function selectRadio(input) {
-    document.querySelectorAll('input[name="start_now"]').forEach(r => {
-      r.nextElementSibling.style.borderColor = '#1e2d5a';
-      r.nextElementSibling.style.color = '#9ca3af';
-      r.nextElementSibling.style.background = 'transparent';
-    });
+    var radios = document.querySelectorAll('input[name="start_now"]');
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].nextElementSibling.style.borderColor = '#1e2d5a';
+      radios[i].nextElementSibling.style.color = '#9ca3af';
+      radios[i].nextElementSibling.style.background = 'transparent';
+    }
     input.nextElementSibling.style.borderColor = '#FACC15';
     input.nextElementSibling.style.color = '#FACC15';
     input.nextElementSibling.style.background = 'rgba(250,204,21,0.08)';
   }
-  // Form submission
   async function handleSubmit(e) {
     e.preventDefault();
-    const btn = document.getElementById('submit-btn');
+    var btn = document.getElementById('submit-btn');
     btn.textContent = 'Sending...';
     btn.disabled = true;
-    const form = document.getElementById('crewdesk-form');
-    const data = new FormData(form);
+    var form = document.getElementById('crewdesk-form');
+    var data = new FormData(form);
     try {
-      const res = await fetch(form.action, {
+      var res = await fetch(form.action, {
         method: 'POST',
         body: data,
         headers: { 'Accept': 'application/json' }
       });
-      if (res.ok) {
+      var json = await res.json();
+      if (json.success) {
         form.style.display = 'none';
         document.getElementById('form-success').style.display = 'block';
       } else {
-        btn.textContent = 'Something went wrong ÃÂ¢ÃÂÃÂ try again';
+        btn.textContent = 'Something went wrong - try again';
         btn.disabled = false;
       }
     } catch(err) {
-      btn.textContent = 'Something went wrong ÃÂ¢ÃÂÃÂ try again';
+      btn.textContent = 'Something went wrong - try again';
       btn.disabled = false;
     }
   }
 </script>
+
 </body>
 </html>
