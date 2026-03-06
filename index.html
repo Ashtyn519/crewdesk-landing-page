@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CrewDesk ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ The Freelancer Portal for Modern Businesses</title>
+<title>CrewDesk &mdash; The Freelancer Portal for Modern Businesses</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -22,12 +22,11 @@
   --gray-500: #64748B;
   --gray-600: #475569;
 }
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Inter', -apple-system, sans-serif; color: var(--navy); background: var(--white); overflow-x: hidden; }
 a { text-decoration: none; color: inherit; }
 
-/* ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ NAV ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ */
+/* NAV */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(20px);
@@ -44,429 +43,339 @@ nav {
 .btn-nav {
   background: var(--yellow); color: var(--navy-dark); padding: 10px 24px;
   border-radius: 8px; font-weight: 700; font-size: 0.9rem; transition: all 0.2s;
+  border: none; cursor: pointer;
 }
 .btn-nav:hover { background: #EAB308; transform: translateY(-1px); }
 
-/* ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ HERO ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ */
+/* HERO */
 .hero {
   min-height: 100vh; background: var(--navy-dark); position: relative;
   display: flex; align-items: center; padding: 120px 2rem 80px;
-  overflow: hidden;
 }
 .hero::before {
   content: ''; position: absolute; top: -200px; right: -200px;
   width: 600px; height: 600px; border-radius: 50%;
   background: radial-gradient(circle, var(--yellow-glow) 0%, transparent 70%);
+  pointer-events: none;
 }
 .hero::after {
   content: ''; position: absolute; bottom: -100px; left: -100px;
   width: 400px; height: 400px; border-radius: 50%;
   background: radial-gradient(circle, rgba(250, 204, 21, 0.08) 0%, transparent 70%);
+  pointer-events: none;
 }
-.hero-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; position: relative; z-index: 2; width: 100%; }
+.hero-inner {
+  max-width: 1200px; margin: 0 auto; width: 100%;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+}
 .hero-badge {
   display: inline-flex; align-items: center; gap: 8px;
-  background: rgba(250, 204, 21, 0.1); border: 1px solid rgba(250, 204, 21, 0.25);
-  padding: 6px 16px; border-radius: 100px; margin-bottom: 1.5rem;
+  background: rgba(250, 204, 21, 0.1); border: 1px solid rgba(250, 204, 21, 0.3);
+  color: var(--yellow); padding: 6px 14px; border-radius: 50px;
+  font-size: 0.8rem; font-weight: 600; margin-bottom: 1.5rem;
 }
-.hero-badge span { color: var(--yellow); font-size: 0.82rem; font-weight: 600; }
-.hero h1 { font-size: 3.5rem; font-weight: 900; color: var(--white); line-height: 1.08; letter-spacing: -1.5px; margin-bottom: 1.5rem; }
-.hero h1 em { font-style: normal; color: var(--yellow); }
-.hero p { font-size: 1.15rem; color: var(--gray-400); line-height: 1.7; margin-bottom: 2rem; max-width: 480px; }
-.hero-cta { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+.hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 900;
+  color: var(--white); line-height: 1.1; letter-spacing: -2px; margin-bottom: 1.5rem;
+}
+.hero h1 span { color: var(--yellow); }
+.hero p {
+  font-size: 1.1rem; color: var(--gray-400); line-height: 1.7;
+  margin-bottom: 2.5rem; max-width: 460px;
+}
+.hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
 .btn-primary {
-  background: var(--yellow); color: var(--navy-dark); padding: 16px 36px;
-  border-radius: 10px; font-weight: 800; font-size: 1.05rem; border: none; cursor: pointer;
-  transition: all 0.25s; display: inline-flex; align-items: center; gap: 8px;
+  background: var(--yellow); color: var(--navy-dark); padding: 14px 28px;
+  border-radius: 10px; font-weight: 700; font-size: 1rem;
+  transition: all 0.2s; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;
 }
-.btn-primary:hover { background: #EAB308; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(250, 204, 21, 0.3); }
+.btn-primary:hover { background: #EAB308; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(250,204,21,0.3); }
 .btn-secondary {
-  background: transparent; color: var(--white); padding: 16px 36px;
-  border-radius: 10px; font-weight: 600; font-size: 1.05rem; border: 2px solid var(--navy-mid);
-  cursor: pointer; transition: all 0.25s;
+  background: transparent; color: var(--white); padding: 14px 28px;
+  border-radius: 10px; font-weight: 600; font-size: 1rem;
+  border: 1.5px solid var(--navy-mid); transition: all 0.2s; cursor: pointer;
 }
 .btn-secondary:hover { border-color: var(--yellow); color: var(--yellow); }
 
-/* Hero mockup */
+/* HERO MOCKUP */
+.hero-visual { position: relative; z-index: 1; }
 .hero-mockup {
-  background: var(--navy); border-radius: 16px; border: 1px solid var(--navy-mid);
-  padding: 0; overflow: hidden; box-shadow: 0 25px 80px rgba(0,0,0,0.4);
-  position: relative;
+  background: var(--navy); border: 1px solid var(--navy-mid);
+  border-radius: 16px; padding: 20px; box-shadow: 0 40px 80px rgba(0,0,0,0.5);
 }
-.mockup-bar {
-  background: var(--navy-mid); padding: 12px 16px; display: flex; align-items: center; gap: 8px;
+.mockup-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--navy-mid);
 }
-.mockup-dot { width: 10px; height: 10px; border-radius: 50%; }
-.mockup-dot.r { background: #FF6B6B; }
-.mockup-dot.y { background: var(--yellow); }
-.mockup-dot.g { background: #34D399; }
-.mockup-body { padding: 24px; }
-.mockup-sidebar { display: flex; gap: 16px; }
-.mockup-nav-items { display: flex; flex-direction: column; gap: 6px; width: 140px; }
-.mockup-nav-item {
-  padding: 10px 14px; border-radius: 8px; font-size: 0.75rem; font-weight: 600;
-  color: var(--gray-400); display: flex; align-items: center; gap: 8px;
+.mockup-title { color: var(--white); font-weight: 700; font-size: 0.95rem; }
+.mockup-badge {
+  background: rgba(250,204,21,0.15); color: var(--yellow);
+  padding: 3px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600;
 }
-.mockup-nav-item.active { background: var(--yellow-glow); color: var(--yellow); }
-.mockup-nav-item svg { width: 14px; height: 14px; flex-shrink: 0; }
-.mockup-main { flex: 1; padding-left: 16px; }
-.mockup-header { margin-bottom: 16px; }
-.mockup-header h3 { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 4px; }
-.mockup-header p { font-size: 0.7rem; color: var(--gray-400); }
-.mockup-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.mockup-card {
-  background: var(--navy-mid); border-radius: 10px; padding: 14px;
-  border: 1px solid rgba(255,255,255,0.06);
+.mockup-tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+.mockup-tab {
+  padding: 6px 14px; border-radius: 6px; font-size: 0.78rem; font-weight: 500;
+  color: var(--gray-400); cursor: pointer;
 }
-.mockup-card h4 { font-size: 0.7rem; font-weight: 600; color: var(--gray-400); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
-.mockup-card .value { font-size: 1.1rem; font-weight: 800; color: var(--white); }
-.mockup-card .value.yellow { color: var(--yellow); }
-.mockup-status { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 0.65rem; font-weight: 700; }
-.status-green { background: rgba(52, 211, 153, 0.15); color: #34D399; }
-.status-yellow { background: rgba(250, 204, 21, 0.15); color: var(--yellow); }
+.mockup-tab.active { background: var(--yellow); color: var(--navy-dark); font-weight: 700; }
+.mockup-project {
+  background: var(--navy-dark); border-radius: 10px; padding: 14px;
+  margin-bottom: 10px; border: 1px solid var(--navy-mid);
+}
+.mockup-project-name { color: var(--white); font-weight: 600; font-size: 0.85rem; margin-bottom: 6px; }
+.mockup-project-sub { color: var(--gray-500); font-size: 0.75rem; margin-bottom: 10px; }
+.mockup-stats { display: flex; gap: 12px; }
+.mockup-stat { text-align: center; }
+.mockup-stat-val { color: var(--yellow); font-weight: 700; font-size: 0.9rem; }
+.mockup-stat-lbl { color: var(--gray-500); font-size: 0.68rem; }
+.mockup-status { display: inline-flex; align-items: center; gap: 5px; margin-top: 8px; }
+.status-dot { width: 7px; height: 7px; border-radius: 50%; background: #22c55e; }
+.status-text { color: #22c55e; font-size: 0.72rem; font-weight: 600; }
 
-/* ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ SOCIAL PROOF ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ */
-.social-proof {
-  background: var(--gray-50); padding: 3rem 2rem; text-align: center;
-  border-top: 1px solid var(--gray-100);
-}
-.social-proof p { color: var(--gray-500); font-size: 0.9rem; font-weight: 500; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px; }
-.logos { display: flex; justify-content: center; gap: 3rem; align-items: center; flex-wrap: wrap; opacity: 0.4; }
-.logos span { font-size: 1.3rem; font-weight: 800; color: var(--navy); letter-spacing: -0.5px; }
-
-/* ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ SECTION STYLES ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ */
+/* SECTIONS */
 section { padding: 100px 2rem; }
-.section-inner { max-width: 1100px; margin: 0 auto; }
+.section-inner { max-width: 1200px; margin: 0 auto; }
 .section-label {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: var(--yellow-light); color: var(--navy); padding: 6px 16px;
-  border-radius: 100px; font-size: 0.8rem; font-weight: 700; margin-bottom: 1rem;
-  text-transform: uppercase; letter-spacing: 0.5px;
+  font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; color: var(--yellow); margin-bottom: 12px;
 }
-.section-title { font-size: 2.8rem; font-weight: 900; color: var(--navy-dark); line-height: 1.1; letter-spacing: -1px; margin-bottom: 1rem; }
-.section-subtitle { font-size: 1.1rem; color: var(--gray-500); max-width: 600px; line-height: 1.7; margin-bottom: 3rem; }
+.section-title {
+  font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 900;
+  color: var(--navy-dark); letter-spacing: -1.5px; line-height: 1.15; margin-bottom: 1rem;
+}
+.section-sub { font-size: 1.05rem; color: var(--gray-500); max-width: 560px; line-height: 1.7; }
 
-/* ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ PROBLEM ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ */
-.problem { background: var(--white); }
-.problem-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+/* LOGOS STRIP */
+.logos { background: var(--gray-50); padding: 40px 2rem; border-top: 1px solid var(--gray-100); border-bottom: 1px solid var(--gray-100); }
+.logos-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
+.logos p { color: var(--gray-500); font-size: 0.85rem; font-weight: 500; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+.logos-list { display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; align-items: center; }
+.logos-list span { color: var(--gray-400); font-weight: 700; font-size: 0.9rem; letter-spacing: 1px; }
+
+/* PROBLEM */
+.problem { background: var(--gray-50); }
+.problem-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 48px; }
 .problem-card {
-  padding: 2rem 1.5rem; border-radius: 16px; background: var(--gray-50);
-  border: 1px solid var(--gray-100); transition: all 0.3s;
+  background: var(--white); border: 1px solid var(--gray-100); border-radius: 14px;
+  padding: 28px; transition: all 0.2s;
 }
-.problem-card:hover { border-color: var(--yellow); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
-.problem-icon {
-  width: 48px; height: 48px; border-radius: 12px; background: var(--navy-dark);
-  display: flex; align-items: center; justify-content: center; margin-bottom: 1.2rem;
-}
-.problem-icon svg { width: 22px; height: 22px; stroke: var(--yellow); fill: none; }
-.problem-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--navy-dark); margin-bottom: 0.6rem; }
-.problem-card p { font-size: 0.9rem; color: var(--gray-500); line-height: 1.6; }
+.problem-card:hover { border-color: rgba(250,204,21,0.3); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+.problem-icon { font-size: 1.8rem; margin-bottom: 14px; }
+.problem-card h3 { font-size: 1rem; font-weight: 700; color: var(--navy-dark); margin-bottom: 8px; }
+.problem-card p { font-size: 0.88rem; color: var(--gray-500); line-height: 1.6; }
 
-/* ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ FEATURES ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ */
-.features { background: var(--navy-dark); color: var(--white); }
-.features .section-label { background: rgba(250, 204, 21, 0.15); color: var(--yellow); }
-.features .section-title { color: var(--white); }
-.features .section-subtitle { color: var(--gray-400); }
-.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+/* FEATURES */
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 56px; }
 .feature-card {
-  padding: 2rem; border-radius: 16px; background: var(--navy);
-  border: 1px solid rgba(255,255,255,0.06); transition: all 0.3s;
+  background: var(--gray-50); border: 1px solid var(--gray-100);
+  border-radius: 16px; padding: 32px; transition: all 0.25s;
 }
-.feature-card:hover { border-color: var(--yellow); transform: translateY(-4px); }
+.feature-card:hover { border-color: var(--yellow); background: var(--white); box-shadow: 0 12px 32px rgba(0,0,0,0.08); transform: translateY(-3px); }
 .feature-icon {
-  width: 44px; height: 44px; border-radius: 10px; background: var(--yellow-glow);
-  display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;
+  width: 48px; height: 48px; background: var(--yellow-glow); border-radius: 12px;
+  display: flex; align-items: center; justify-content: center; margin-bottom: 18px;
 }
-.feature-icon svg { width: 20px; height: 20px; stroke: var(--yellow); fill: none; }
-.feature-card h3 { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 0.5rem; }
-.feature-card p { font-size: 0.88rem; color: var(--gray-400); line-height: 1.6; }
+.feature-icon svg { width: 24px; height: 24px; color: var(--yellow); }
+.feature-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--navy-dark); margin-bottom: 10px; }
+.feature-card p { font-size: 0.88rem; color: var(--gray-500); line-height: 1.65; }
 
-/* ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ HOW IT WORKS ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ */
-.how-it-works { background: var(--gray-50); }
-.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
-.step { text-align: center; position: relative; }
+/* HOW IT WORKS */
+.how { background: var(--navy-dark); }
+.how .section-title { color: var(--white); }
+.how .section-sub { color: var(--gray-400); }
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px; margin-top: 56px; }
+.step { text-align: center; }
 .step-num {
-  width: 64px; height: 64px; border-radius: 50%; background: var(--navy-dark);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.5rem; font-weight: 900; color: var(--yellow); margin: 0 auto 1.5rem;
+  width: 56px; height: 56px; background: var(--yellow); color: var(--navy-dark);
+  border-radius: 50%; font-size: 1.4rem; font-weight: 900;
+  display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;
 }
-.step h3 { font-size: 1.2rem; font-weight: 700; color: var(--navy-dark); margin-bottom: 0.6rem; }
-.step p { font-size: 0.95rem; color: var(--gray-500); line-height: 1.6; max-width: 280px; margin: 0 auto; }
+.step h3 { font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 10px; }
+.step p { font-size: 0.9rem; color: var(--gray-400); line-height: 1.65; max-width: 240px; margin: 0 auto; }
 
-/* ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ PRICING ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ */
-.pricing { background: var(--white); }
-.pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
-.price-card {
-  padding: 2.5rem 2rem; border-radius: 16px; background: var(--gray-50);
-  border: 2px solid var(--gray-100); text-align: center; transition: all 0.3s;
-  position: relative;
-}
-.price-card.popular {
-  background: var(--navy-dark); border-color: var(--yellow);
-  transform: scale(1.05); box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-}
-.popular-badge {
-  position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
-  background: var(--yellow); color: var(--navy-dark); padding: 4px 16px;
-  border-radius: 100px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-.price-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; }
-.price-card.popular h3 { color: var(--white); }
-.price-amount { font-size: 3rem; font-weight: 900; margin-bottom: 0.3rem; }
-.price-card.popular .price-amount { color: var(--yellow); }
-.price-period { font-size: 0.9rem; color: var(--gray-500); margin-bottom: 1.5rem; }
-.price-card.popular .price-period { color: var(--gray-400); }
-.price-desc { font-size: 0.9rem; color: var(--gray-500); margin-bottom: 1.5rem; }
-.price-card.popular .price-desc { color: var(--gray-400); }
-.btn-price {
-  width: 100%; padding: 12px; border-radius: 10px; font-weight: 700;
-  font-size: 0.9rem; border: 2px solid var(--navy-dark); cursor: pointer;
-  background: transparent; color: var(--navy-dark); transition: all 0.2s;
-}
-.btn-price:hover { background: var(--navy-dark); color: var(--white); }
-.price-card.popular .btn-price { background: var(--yellow); color: var(--navy-dark); border-color: var(--yellow); }
-.price-card.popular .btn-price:hover { background: #EAB308; }
+/* COMPARISON */
+.compare-wrap { background: var(--navy-dark); border: 1px solid var(--navy-mid); border-radius: 20px; overflow: hidden; margin-top: 48px; }
+.compare-header { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 0; background: var(--navy); }
+.compare-header div { padding: 16px 24px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gray-400); }
+.compare-header .col-crew { color: var(--yellow); }
+.compare-row { display: grid; grid-template-columns: 2fr 1fr 1fr; border-top: 1px solid var(--navy-mid); }
+.compare-row div { padding: 14px 24px; font-size: 0.88rem; color: var(--gray-300); display: flex; align-items: center; }
+.compare-row .feature-name { color: var(--white); font-weight: 500; }
+.check { color: var(--yellow); font-weight: 700; font-size: 1rem; }
+.cross { color: var(--gray-600); font-size: 0.85rem; }
 
-/* ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ COMPARISON ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ */
-.comparison { background: var(--navy-dark); }
-.comparison .section-label { background: rgba(250, 204, 21, 0.15); color: var(--yellow); }
-.comparison .section-title { color: var(--white); }
-.comparison .section-subtitle { color: var(--gray-400); }
-.compare-quote {
-  font-size: 2.2rem; font-weight: 800; color: var(--yellow); line-height: 1.2;
-  margin-bottom: 1rem; letter-spacing: -0.5px;
+/* EXAMPLE */
+.example { background: var(--gray-50); }
+.example-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.example-card {
+  background: var(--white); border: 1px solid var(--gray-100); border-radius: 16px;
+  padding: 32px; box-shadow: 0 8px 32px rgba(0,0,0,0.06);
 }
-.compare-sub { font-size: 1.2rem; color: var(--white); font-weight: 500; margin-bottom: 3rem; }
-.compare-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 12px; overflow: hidden; }
-.compare-table th {
-  background: var(--yellow); color: var(--navy-dark); padding: 16px 24px;
-  font-weight: 700; font-size: 0.9rem; text-align: left;
+.example-project-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--gray-100);
 }
-.compare-table th:not(:first-child) { text-align: center; }
-.compare-table td {
-  padding: 14px 24px; border-bottom: 1px solid var(--navy-mid);
-  color: var(--gray-300); font-size: 0.9rem;
+.example-project-name { font-weight: 800; font-size: 1rem; color: var(--navy-dark); }
+.example-badge {
+  background: rgba(250,204,21,0.15); color: #854d0e;
+  padding: 3px 10px; border-radius: 20px; font-size: 0.72rem; font-weight: 600;
 }
-.compare-table td:not(:first-child) { text-align: center; }
-.compare-table tr:last-child td { border-bottom: none; }
-.compare-table tbody tr { background: var(--navy); }
-.compare-table tbody tr:hover { background: var(--navy-mid); }
-.check-yes { color: var(--yellow); font-weight: 700; }
-
-/* ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ USE CASE ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ */
-.use-case { background: var(--gray-50); }
-.use-case-card {
-  background: var(--white); border-radius: 20px; padding: 3rem;
-  border: 1px solid var(--gray-100); box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-  display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;
+.crew-list { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+.crew-tag {
+  background: var(--gray-50); border: 1px solid var(--gray-100);
+  border-radius: 8px; padding: 8px 12px; font-size: 0.78rem;
+  color: var(--navy-mid); font-weight: 500;
 }
-.use-case-left h3 { font-size: 1.8rem; font-weight: 800; color: var(--navy-dark); margin-bottom: 0.8rem; }
-.use-case-left p { color: var(--gray-500); margin-bottom: 1.5rem; line-height: 1.6; }
-.crew-avatars { display: flex; gap: 0.8rem; margin-bottom: 1.5rem; }
-.crew-avatar {
-  width: 52px; height: 52px; border-radius: 50%; background: var(--yellow);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 0.7rem; font-weight: 700; color: var(--navy-dark); text-align: center;
-  line-height: 1.1;
-}
-.callout-box {
-  background: var(--navy-dark); border-radius: 12px; padding: 1.5rem 2rem;
-  display: inline-block;
-}
-.callout-box h4 { font-size: 1.3rem; font-weight: 800; color: var(--yellow); margin-bottom: 0.3rem; }
-.callout-box p { font-size: 0.85rem; color: var(--gray-400); }
-.portal-preview {
-  background: var(--navy); border-radius: 12px; padding: 1.5rem;
-  border: 1px solid var(--navy-mid);
-}
-.portal-preview h4 { color: var(--white); font-size: 0.9rem; font-weight: 700; margin-bottom: 1rem; }
-.portal-item {
+.freelancer-view h4 { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gray-500); margin-bottom: 12px; }
+.freelancer-list { list-style: none; }
+.freelancer-list li {
   display: flex; align-items: center; gap: 10px;
-  padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 8px 0; font-size: 0.85rem; color: var(--navy-mid);
+  border-bottom: 1px solid var(--gray-50);
 }
-.portal-item:last-child { border-bottom: none; }
-.portal-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--yellow); flex-shrink: 0; }
-.portal-item span { color: var(--gray-300); font-size: 0.88rem; }
+.freelancer-list li:last-child { border-bottom: none; }
+.freelancer-list li::before { content: ''; width: 7px; height: 7px; background: var(--yellow); border-radius: 50%; flex-shrink: 0; }
 
-/* ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ CTA ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ */
-.cta {
-  background: var(--navy-dark); padding: 100px 2rem; text-align: center; position: relative;
-  overflow: hidden;
+/* PRICING */
+.pricing { background: var(--gray-50); }
+.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin-top: 56px; }
+.pricing-card {
+  background: var(--white); border: 1px solid var(--gray-100); border-radius: 20px;
+  padding: 36px 28px; transition: all 0.25s; position: relative;
 }
-.cta::before {
-  content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-  width: 800px; height: 800px; border-radius: 50%;
-  background: radial-gradient(circle, var(--yellow-glow) 0%, transparent 60%);
+.pricing-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.1); }
+.pricing-card.popular { border-color: var(--yellow); box-shadow: 0 8px 32px rgba(250,204,21,0.2); }
+.popular-badge {
+  position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+  background: var(--yellow); color: var(--navy-dark);
+  padding: 4px 16px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;
+  white-space: nowrap;
 }
-.cta-content { position: relative; z-index: 2; }
-.cta h2 { font-size: 3rem; font-weight: 900; color: var(--white); margin-bottom: 1rem; letter-spacing: -1px; }
-.cta h2 em { font-style: normal; color: var(--yellow); }
-.cta p { font-size: 1.1rem; color: var(--gray-400); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
-.cta-form { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
-.cta-input {
-  padding: 16px 24px; border-radius: 10px; border: 2px solid var(--navy-mid);
-  background: var(--navy); color: var(--white); font-size: 1rem; width: 320px;
-  font-family: 'Inter', sans-serif;
-}
-.cta-input::placeholder { color: var(--gray-500); }
-.cta-input:focus { outline: none; border-color: var(--yellow); }
+.pricing-tier { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gray-500); margin-bottom: 8px; }
+.pricing-price { font-size: 2.4rem; font-weight: 900; color: var(--navy-dark); letter-spacing: -1px; margin-bottom: 4px; }
+.pricing-price span { font-size: 1rem; font-weight: 500; color: var(--gray-500); }
+.pricing-desc { font-size: 0.85rem; color: var(--gray-500); margin-bottom: 24px; }
+.pricing-card .btn-primary { width: 100%; justify-content: center; padding: 12px; margin-top: 8px; }
+.btn-outline { width: 100%; justify-content: center; padding: 12px; margin-top: 8px; background: transparent; border: 1.5px solid var(--navy-mid); color: var(--navy-dark); border-radius: 10px; font-weight: 700; font-size: 0.95rem; cursor: pointer; transition: all 0.2s; display: inline-flex; }
+.btn-outline:hover { border-color: var(--yellow); color: var(--yellow); }
 
-/* ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ FOOTER ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ */
+/* CTA */
+.cta { background: var(--navy-dark); text-align: center; }
+.cta .section-title { color: var(--white); }
+.cta .section-sub { color: var(--gray-400); margin: 16px auto 32px; }
+.cta .btn-primary { font-size: 1.05rem; padding: 16px 36px; }
+
+/* FOOTER */
 footer {
   background: var(--navy-dark); border-top: 1px solid var(--navy-mid);
-  padding: 3rem 2rem 2rem; text-align: center;
+  padding: 32px 2rem; text-align: center;
 }
-.footer-logo { display: flex; align-items: center; gap: 8px; justify-content: center; margin-bottom: 1rem; }
-.footer-logo svg { width: 24px; height: 24px; }
-.footer-logo span { font-size: 1.1rem; font-weight: 800; color: var(--white); }
-footer p { color: var(--gray-500); font-size: 0.85rem; }
+.footer-logo { display: flex; align-items: center; gap: 8px; justify-content: center; margin-bottom: 12px; }
+.footer-logo span { font-size: 1rem; font-weight: 700; color: var(--white); }
+footer p { color: var(--gray-500); font-size: 0.82rem; }
 
-/* ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ RESPONSIVE ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ */
-@media (max-width: 900px) {
-  .hero-content { grid-template-columns: 1fr; }
-  .hero h1 { font-size: 2.5rem; }
-  .hero-mockup { display: none; }
-  .problem-grid { grid-template-columns: 1fr 1fr; }
-  .feature-grid { grid-template-columns: 1fr 1fr; }
-  .pricing-grid { grid-template-columns: 1fr 1fr; }
-  .steps { grid-template-columns: 1fr; }
-  .use-case-card { grid-template-columns: 1fr; }
-  .nav-links a:not(.btn-nav) { display: none; }
-}
-@media (max-width: 600px) {
-  .problem-grid, .feature-grid, .pricing-grid { grid-template-columns: 1fr; }
-  .hero h1 { font-size: 2rem; }
-  .section-title { font-size: 2rem; }
-  .price-card.popular { transform: none; }
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-visual { display: none; }
+  .nav-links { display: none; }
+  .example-inner { grid-template-columns: 1fr; }
 }
 </style>
 </head>
 <body>
-
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">
+  <div class="nav-logo">
     <svg viewBox="0 0 24 24" fill="#FACC15" stroke="#FACC15" stroke-width="1"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
     <span>CrewDesk</span>
-  </a>
+  </div>
   <div class="nav-links">
     <a href="#features">Features</a>
     <a href="#pricing">Pricing</a>
     <a href="#how">How it Works</a>
-    <a href="#" class="btn-nav" onclick="openModal(event)">Get Early Access</a>
+    <button class="btn-nav" onclick="openModal(event)">Get Early Access</button>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-content">
-    <div>
+  <div class="hero-inner">
+    <div class="hero-content">
       <div class="hero-badge">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="#FACC15" stroke="#FACC15" stroke-width="1"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-        <span>Now accepting early access signups</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="#FACC15"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        Now accepting early access signups
       </div>
-      <h1>Stop chasing freelancers<br>through <em>email chaos.</em></h1>
+      <h1>Stop chasing freelancers<br>through <span>email chaos.</span></h1>
       <p>CrewDesk gives every freelancer a clean portal with briefs, contracts, schedules, invoices, and messages. All in one place. Finally.</p>
-      <div class="hero-cta">
-        <button class="btn-primary" onclick="openModal(event)">Get Early Access <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="openModal(event)">Get Early Access &rarr;</button>
         <button class="btn-secondary" onclick="document.getElementById('how').scrollIntoView({behavior:'smooth'})">See How It Works</button>
       </div>
     </div>
-
-    <!-- MOCKUP -->
-    <div class="hero-mockup">
-      <div class="mockup-bar">
-        <span class="mockup-dot r"></span>
-        <span class="mockup-dot y"></span>
-        <span class="mockup-dot g"></span>
-      </div>
-      <div class="mockup-body">
-        <div class="mockup-sidebar">
-          <div class="mockup-nav-items">
-            <div class="mockup-nav-item active">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
-              Dashboard
-            </div>
-            <div class="mockup-nav-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-              Projects
-            </div>
-            <div class="mockup-nav-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-              Contracts
-            </div>
-            <div class="mockup-nav-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-              Invoices
-            </div>
+    <div class="hero-visual">
+      <div class="hero-mockup">
+        <div class="mockup-header">
+          <span class="mockup-title">Dashboard</span>
+          <span class="mockup-badge">Active</span>
+        </div>
+        <div class="mockup-tabs">
+          <div class="mockup-tab active">Projects</div>
+          <div class="mockup-tab">Contracts</div>
+          <div class="mockup-tab">Invoices</div>
+        </div>
+        <div class="mockup-project">
+          <div class="mockup-project-name">Nike Campaign Shoot</div>
+          <div class="mockup-project-sub">4 freelancers assigned &middot; 2 contracts pending</div>
+          <div class="mockup-stats">
+            <div class="mockup-stat"><div class="mockup-stat-val">4</div><div class="mockup-stat-lbl">Freelancers</div></div>
+            <div class="mockup-stat"><div class="mockup-stat-val">2</div><div class="mockup-stat-lbl">Contracts</div></div>
+            <div class="mockup-stat"><div class="mockup-stat-val">3/4</div><div class="mockup-stat-lbl">Invoices</div></div>
           </div>
-          <div class="mockup-main">
-            <div class="mockup-header">
-              <h3>Nike Campaign Shoot</h3>
-              <p>4 freelancers assigned &middot; 2 contracts pending</p>
-            </div>
-            <div class="mockup-cards">
-              <div class="mockup-card">
-                <h4>Freelancers</h4>
-                <div class="value yellow">4</div>
-              </div>
-              <div class="mockup-card">
-                <h4>Contracts</h4>
-                <span class="mockup-status status-yellow">2 pending</span>
-              </div>
-              <div class="mockup-card">
-                <h4>Invoices</h4>
-                <div class="value">3/4</div>
-              </div>
-              <div class="mockup-card">
-                <h4>Status</h4>
-                <span class="mockup-status status-green">Active</span>
-              </div>
-            </div>
-          </div>
+          <div class="mockup-status"><div class="status-dot"></div><span class="status-text">Active</span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SOCIAL PROOF -->
-<div class="social-proof">
-  <p>Built for teams that rely on freelancers</p>
-  <div class="logos">
-    <span>Creative Agencies</span>
-    <span>Production Companies</span>
-    <span>Events Teams</span>
-    <span>Marketing Agencies</span>
-    <span>Media Teams</span>
+<!-- LOGOS STRIP -->
+<div class="logos">
+  <div class="logos-inner">
+    <p>Built for teams that rely on freelancers</p>
+    <div class="logos-list">
+      <span>Creative Agencies</span>
+      <span>Production Companies</span>
+      <span>Events Teams</span>
+      <span>Marketing Agencies</span>
+      <span>Media Teams</span>
+    </div>
   </div>
 </div>
-
 <!-- PROBLEM -->
-<section class="problem" id="problem">
+<section class="problem">
   <div class="section-inner">
     <div class="section-label">The Problem</div>
     <h2 class="section-title">Managing freelancers<br>shouldn't feel like this.</h2>
-    <p class="section-subtitle">Right now, businesses scatter information across emails, WhatsApp, Google Drive, and spreadsheets. Freelancers miss briefs. Invoices get lost. Nobody knows what's happening.</p>
+    <p class="section-sub">Right now, businesses scatter information across emails, WhatsApp, Google Drive, and spreadsheets. Freelancers miss briefs. Invoices get lost. Nobody knows what's happening.</p>
     <div class="problem-grid">
       <div class="problem-card">
-        <div class="problem-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <div class="problem-icon">&#128172;</div>
         <h3>Scattered Comms</h3>
-        <p>Emails, WhatsApp, Slack ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ briefs and instructions get lost in endless threads.</p>
+        <p>Emails, WhatsApp, Slack &mdash; briefs and instructions get lost in endless threads.</p>
       </div>
       <div class="problem-card">
-        <div class="problem-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+        <div class="problem-icon">&#128196;</div>
         <h3>Document Chaos</h3>
         <p>Contracts in email, schedules in Drive, invoices on desktops. Nothing is centralised.</p>
       </div>
       <div class="problem-card">
-        <div class="problem-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+        <div class="problem-icon">&#128269;</div>
         <h3>No Single Source</h3>
         <p>There's no one place where freelancers can see everything they need for a job.</p>
       </div>
       <div class="problem-card">
-        <div class="problem-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div class="problem-icon">&#128176;</div>
         <h3>Invoice Nightmares</h3>
         <p>Chasing invoices across email, PDFs, and spreadsheets wastes everyone's time.</p>
       </div>
@@ -475,52 +384,63 @@ footer p { color: var(--gray-500); font-size: 0.85rem; }
 </section>
 
 <!-- FEATURES -->
-<section class="features" id="features">
+<section id="features">
   <div class="section-inner">
     <div class="section-label">Features</div>
     <h2 class="section-title">Everything in one portal.</h2>
-    <p class="section-subtitle">CrewDesk replaces your messy freelancer workflow with a single, beautiful dashboard. For freelancers and businesses alike.</p>
-    <div class="feature-grid">
+    <p class="section-sub">CrewDesk replaces your messy freelancer workflow with a single, beautiful dashboard. For freelancers and businesses alike.</p>
+    <div class="features-grid">
       <div class="feature-card">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#FACC15" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+        </div>
         <h3>Freelancer Portal</h3>
         <p>Every freelancer gets a branded login with everything they need for the job.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#FACC15" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><path d="M16 13H8M16 17H8M10 9H8"/></svg>
+        </div>
         <h3>Digital Contracts</h3>
-        <p>Upload contracts, NDAs, and agreements. Freelancers sign digitally ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ no printing.</p>
+        <p>Upload contracts, NDAs, and agreements. Freelancers sign digitally &mdash; no printing.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#FACC15" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        </div>
         <h3>Job Dashboard</h3>
         <p>Create projects, add briefs, assign freelancers, and track everything in one view.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#FACC15" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
+        </div>
         <h3>Invoice Tracking</h3>
         <p>Freelancers upload invoices. You see payment status at a glance. No more chasing.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
-        <h3>Schedules & Calendars</h3>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#FACC15" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <h3>Schedules &amp; Calendars</h3>
         <p>Share itineraries, call times, and event schedules. Sync with Google Calendar.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#FACC15" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
         <h3>Team Messaging</h3>
         <p>Send messages directly to freelancers from the platform. No more switching apps.</p>
       </div>
     </div>
   </div>
 </section>
-
 <!-- HOW IT WORKS -->
-<section class="how-it-works" id="how">
-  <div class="section-inner" style="text-align: center;">
+<section class="how" id="how">
+  <div class="section-inner">
     <div class="section-label">How It Works</div>
     <h2 class="section-title">Three steps. Zero chaos.</h2>
-    <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">Setting up CrewDesk takes minutes, not days. Here's how simple it is.</p>
+    <p class="section-sub">Setting up CrewDesk takes minutes, not days. Here's how simple it is.</p>
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
@@ -534,104 +454,101 @@ footer p { color: var(--gray-500); font-size: 0.85rem; }
       </div>
       <div class="step">
         <div class="step-num">3</div>
-        <h3>Manage & Track</h3>
-        <p>Track contracts, invoices, schedules, and communications ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ all from your clean dashboard.</p>
+        <h3>Manage &amp; Track</h3>
+        <p>Track contracts, invoices, schedules, and communications &mdash; all from your clean dashboard.</p>
+      </div>
+    </div>
+
+    <!-- COMPARISON TABLE -->
+    <div style="margin-top:80px;">
+      <div class="section-label">Why CrewDesk</div>
+      <h2 class="section-title" style="color:#fff;">Notion + DocuSign + Dropbox<br>+ Freelancer Portal</h2>
+      <p class="section-sub" style="color:#94A3B8;">But simpler. And purpose-built.</p>
+      <div class="compare-wrap" style="margin-top:32px;">
+        <div class="compare-header">
+          <div>Feature</div>
+          <div class="col-crew">CrewDesk</div>
+          <div>DIY Stack</div>
+        </div>
+        <div class="compare-row"><div class="feature-name">Freelancer portal</div><div><span class="check">&#10003; Built-in</span></div><div><span class="cross">Doesn't exist</span></div></div>
+        <div class="compare-row"><div class="feature-name">Contract signing</div><div><span class="check">&#10003; Built-in</span></div><div><span class="cross">DocuSign (&pound;25/mo)</span></div></div>
+        <div class="compare-row"><div class="feature-name">File sharing</div><div><span class="check">&#10003; Built-in</span></div><div><span class="cross">Dropbox (&pound;10/mo)</span></div></div>
+        <div class="compare-row"><div class="feature-name">Invoice tracking</div><div><span class="check">&#10003; Built-in</span></div><div><span class="cross">Spreadsheets</span></div></div>
+        <div class="compare-row"><div class="feature-name">Schedules</div><div><span class="check">&#10003; Built-in</span></div><div><span class="cross">Google Cal + emails</span></div></div>
+        <div class="compare-row"><div class="feature-name">Messaging</div><div><span class="check">&#10003; Built-in</span></div><div><span class="cross">WhatsApp / Email</span></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- COMPARISON -->
-<section class="comparison">
+<!-- REAL EXAMPLE -->
+<section class="example">
   <div class="section-inner">
-    <div class="section-label">Why CrewDesk</div>
-    <div class="compare-quote">Notion + DocuSign + Dropbox<br>+ Freelancer Portal</div>
-    <div class="compare-sub">But simpler. And purpose-built.</div>
-    <table class="compare-table">
-      <thead>
-        <tr><th>Feature</th><th>CrewDesk</th><th>DIY Stack</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Freelancer portal</td><td class="check-yes">Built-in</td><td>Doesn't exist</td></tr>
-        <tr><td>Contract signing</td><td class="check-yes">Built-in</td><td>DocuSign (ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£25/mo)</td></tr>
-        <tr><td>File sharing</td><td class="check-yes">Built-in</td><td>Dropbox (ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£10/mo)</td></tr>
-        <tr><td>Invoice tracking</td><td class="check-yes">Built-in</td><td>Spreadsheets</td></tr>
-        <tr><td>Schedules</td><td class="check-yes">Built-in</td><td>Google Cal + emails</td></tr>
-        <tr><td>Messaging</td><td class="check-yes">Built-in</td><td>WhatsApp / Email</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<!-- USE CASE -->
-<section class="use-case">
-  <div class="section-inner">
-    <div class="section-label">Real Example</div>
-    <h2 class="section-title">See it in action.</h2>
-    <p class="section-subtitle">A video production company hires a crew for a Nike campaign shoot. Here's how CrewDesk makes it seamless.</p>
-    <div class="use-case-card">
-      <div class="use-case-left">
-        <h3>Nike Campaign Shoot</h3>
-        <p>The production company creates a project and invites their crew. Each freelancer logs in and sees exactly what they need.</p>
-        <div class="crew-avatars">
-          <div class="crew-avatar">Video-<br>grapher</div>
-          <div class="crew-avatar">Editor</div>
-          <div class="crew-avatar">Drone<br>Operator</div>
-          <div class="crew-avatar">Photo-<br>grapher</div>
-        </div>
-        <div class="callout-box">
-          <h4>No email chaos.</h4>
-          <p>Everything in one clean portal.</p>
+    <div class="example-inner">
+      <div>
+        <div class="section-label">Real Example</div>
+        <h2 class="section-title">See it in action.</h2>
+        <p class="section-sub">A video production company hires a crew for a Nike campaign shoot. Here's how CrewDesk makes it seamless.</p>
+        <div class="example-card" style="margin-top:32px;">
+          <div class="example-project-header">
+            <span class="example-project-name">Nike Campaign Shoot</span>
+            <span class="example-badge">Active</span>
+          </div>
+          <p style="font-size:0.85rem;color:#64748B;margin-bottom:16px;">The production company creates a project and invites their crew. Each freelancer logs in and sees exactly what they need.</p>
+          <div class="crew-list">
+            <div class="crew-tag">Video-grapher</div>
+            <div class="crew-tag">Editor</div>
+            <div class="crew-tag">Drone Operator</div>
+            <div class="crew-tag">Photo-grapher</div>
+          </div>
+          <p style="font-size:0.75rem;color:#94A3B8;font-style:italic;">No email chaos. Everything in one clean portal.</p>
         </div>
       </div>
-      <div class="portal-preview">
+      <div class="freelancer-view">
         <h4>Freelancer sees:</h4>
-        <div class="portal-item"><span class="portal-dot"></span><span>Call time & location</span></div>
-        <div class="portal-item"><span class="portal-dot"></span><span>Shoot brief with details</span></div>
-        <div class="portal-item"><span class="portal-dot"></span><span>Full schedule / itinerary</span></div>
-        <div class="portal-item"><span class="portal-dot"></span><span>Contract to sign digitally</span></div>
-        <div class="portal-item"><span class="portal-dot"></span><span>Where to upload invoice</span></div>
-        <div class="portal-item"><span class="portal-dot"></span><span>Messages from production team</span></div>
+        <ul class="freelancer-list">
+          <li>Call time &amp; location</li>
+          <li>Shoot brief with details</li>
+          <li>Full schedule / itinerary</li>
+          <li>Contract to sign digitally</li>
+          <li>Where to upload invoice</li>
+          <li>Messages from production team</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
-
 <!-- PRICING -->
 <section class="pricing" id="pricing">
-  <div class="section-inner" style="text-align: center;">
+  <div class="section-inner">
     <div class="section-label">Pricing</div>
     <h2 class="section-title">Simple, transparent pricing.</h2>
-    <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">Start free. Scale as you grow. No hidden fees, no surprises.</p>
+    <p class="section-sub">Start free. Scale as you grow. No hidden fees, no surprises.</p>
     <div class="pricing-grid">
-      <div class="price-card">
-        <h3>Starter</h3>
-        <div class="price-amount">ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£19</div>
-        <div class="price-period">per month</div>
-        <div class="price-desc">Up to 5 freelancers</div>
-        <button class="btn-price" onclick="openModal(event)">Get Started</button>
+      <div class="pricing-card">
+        <div class="pricing-tier">Starter</div>
+        <div class="pricing-price">&pound;19<span> / month</span></div>
+        <div class="pricing-desc">Up to 5 freelancers</div>
+        <button class="btn-outline" onclick="openModal(event)">Get Started</button>
       </div>
-      <div class="price-card popular">
+      <div class="pricing-card popular">
         <div class="popular-badge">Most Popular</div>
-        <h3>Pro</h3>
-        <div class="price-amount">ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£49</div>
-        <div class="price-period">per month</div>
-        <div class="price-desc">Up to 25 freelancers</div>
-        <button class="btn-price" onclick="openModal(event)">Get Started</button>
+        <div class="pricing-tier">Pro</div>
+        <div class="pricing-price">&pound;49<span> / month</span></div>
+        <div class="pricing-desc">Up to 25 freelancers</div>
+        <button class="btn-primary" onclick="openModal(event)">Get Started</button>
       </div>
-      <div class="price-card">
-        <h3>Business</h3>
-        <div class="price-amount">ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£99</div>
-        <div class="price-period">per month</div>
-        <div class="price-desc">Unlimited freelancers</div>
-        <button class="btn-price" onclick="openModal(event)">Get Started</button>
+      <div class="pricing-card">
+        <div class="pricing-tier">Business</div>
+        <div class="pricing-price">&pound;99<span> / month</span></div>
+        <div class="pricing-desc">Unlimited freelancers</div>
+        <button class="btn-outline" onclick="openModal(event)">Get Started</button>
       </div>
-      <div class="price-card">
-        <h3>Enterprise</h3>
-        <div class="price-amount" style="font-size: 2rem; padding-top: 0.5rem;">Custom</div>
-        <div class="price-period">&nbsp;</div>
-        <div class="price-desc">For large organisations</div>
-        <button class="btn-price" onclick="openModal(event)">Contact Us</button>
+      <div class="pricing-card">
+        <div class="pricing-tier">Enterprise</div>
+        <div class="pricing-price" style="font-size:1.8rem;">Custom</div>
+        <div class="pricing-desc">For large organisations</div>
+        <button class="btn-outline" onclick="openModal(event)">Contact Us</button>
       </div>
     </div>
   </div>
@@ -639,25 +556,22 @@ footer p { color: var(--gray-500); font-size: 0.85rem; }
 
 <!-- CTA -->
 <section class="cta">
-  <div class="cta-content">
-    <h2>Ready to ditch the <em>email chaos?</em></h2>
-    <p>Join the waitlist and be one of the first businesses to try CrewDesk. We're launching soon.</p>
-    <div class="cta-form">
-      <input type="email" class="cta-input" placeholder="Enter your work email">
-      <button class="btn-primary" onclick="openModal(event)">Join the Waitlist</button>
-    </div>
+  <div class="section-inner">
+    <div class="section-label">Ready?</div>
+    <h2 class="section-title">Ready to ditch the email chaos?</h2>
+    <p class="section-sub">Join the waitlist and be one of the first businesses to try CrewDesk. We're launching soon.</p>
+    <button class="btn-primary" onclick="openModal(event)">Join the Waitlist</button>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="#FACC15" stroke="#FACC15" stroke-width="1"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="#FACC15" stroke="#FACC15" stroke-width="1"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
     <span>CrewDesk</span>
   </div>
   <p>The freelancer portal for businesses of all sizes. &copy; 2026 CrewDesk. All rights reserved.</p>
 </footer>
-
 
 <!-- CREWDESK WAITLIST MODAL -->
 <div id="crewdesk-modal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(5,10,24,0.85);backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:20px;">
@@ -669,25 +583,22 @@ footer p { color: var(--gray-500); font-size: 0.85rem; }
     </div>
     <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:1.6rem;color:#fff;margin:0 0 8px;line-height:1.2;">Get <span style="color:#FACC15;">Early Access</span></h2>
     <p style="font-family:'Inter',sans-serif;color:#9ca3af;font-size:0.9rem;margin:0 0 32px;">Help us build the right product for you. Takes 60 seconds.</p>
-    <form id="crewdesk-form" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleSubmit(event)">
-      <input type="hidden" name="access_key" value="1a886d4d-8213-44f3-af0f-7b68eedef5b1">
-      <input type="hidden" name="subject" value="New CrewDesk Waitlist Signup!">
-      <input type="hidden" name="from_name" value="CrewDesk Waitlist">
+    <form id="crewdesk-form" onsubmit="handleSubmit(event)">
       <div style="margin-bottom:20px;">
         <label style="font-family:'Inter',sans-serif;font-size:0.8rem;font-weight:600;color:#FACC15;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:8px;">1. Your Name</label>
-        <input type="text" name="name" required placeholder="e.g. Sarah Johnson" style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
+        <input type="text" id="f-name" required placeholder="e.g. Sarah Johnson" style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
       </div>
       <div style="margin-bottom:20px;">
         <label style="font-family:'Inter',sans-serif;font-size:0.8rem;font-weight:600;color:#FACC15;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:8px;">2. Work Email</label>
-        <input type="email" name="email" required placeholder="e.g. sarah@yourbusiness.com" style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
+        <input type="email" id="f-email" required placeholder="e.g. sarah@yourbusiness.com" style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
       </div>
       <div style="margin-bottom:20px;">
         <label style="font-family:'Inter',sans-serif;font-size:0.8rem;font-weight:600;color:#FACC15;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:8px;">3. Business Name &amp; What You Do</label>
-        <input type="text" name="business" required placeholder="e.g. Spark Agency - creative production" style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
+        <input type="text" id="f-business" required placeholder="e.g. Spark Agency - creative production" style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
       </div>
       <div style="margin-bottom:20px;">
         <label style="font-family:'Inter',sans-serif;font-size:0.8rem;font-weight:600;color:#FACC15;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:8px;">4. How many contractors do you work with per year?</label>
-        <select name="contractors" required style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;appearance:none;cursor:pointer;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
+        <select id="f-contractors" required style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;appearance:none;cursor:pointer;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
           <option value="" disabled selected style="color:#9ca3af;">Select a range...</option>
           <option value="1-5" style="background:#0D1B3E;">1 - 5</option>
           <option value="6-20" style="background:#0D1B3E;">6 - 20</option>
@@ -697,7 +608,7 @@ footer p { color: var(--gray-500); font-size: 0.85rem; }
       </div>
       <div style="margin-bottom:20px;">
         <label style="font-family:'Inter',sans-serif;font-size:0.8rem;font-weight:600;color:#FACC15;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:8px;">5. Where are you based?</label>
-        <input type="text" name="location" required placeholder="e.g. London, UK" style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
+        <input type="text" id="f-location" required placeholder="e.g. London, UK" style="width:100%;padding:14px 16px;background:#0a1428;border:1.5px solid #1e2d5a;border-radius:10px;color:#fff;font-family:'Inter',sans-serif;font-size:0.95rem;box-sizing:border-box;outline:none;" onfocus="this.style.borderColor='#FACC15'" onblur="this.style.borderColor='#1e2d5a'">
       </div>
       <div style="margin-bottom:32px;">
         <label style="font-family:'Inter',sans-serif;font-size:0.8rem;font-weight:600;color:#FACC15;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:12px;">6. If CrewDesk launched today, would you start using it?</label>
@@ -729,6 +640,7 @@ footer p { color: var(--gray-500); font-size: 0.85rem; }
     </div>
   </div>
 </div>
+
 <script>
   function openModal(e) {
     if (e) e.preventDefault();
@@ -753,11 +665,11 @@ footer p { color: var(--gray-500); font-size: 0.85rem; }
     if (e.key === 'Escape') closeModal();
   });
   function selectRadio(input) {
-    var radios = document.querySelectorAll('input[name="start_now"]');
-    for (var i = 0; i < radios.length; i++) {
-      radios[i].nextElementSibling.style.borderColor = '#1e2d5a';
-      radios[i].nextElementSibling.style.color = '#9ca3af';
-      radios[i].nextElementSibling.style.background = 'transparent';
+    var opts = document.querySelectorAll('.radio-opt');
+    for (var i = 0; i < opts.length; i++) {
+      opts[i].style.borderColor = '#1e2d5a';
+      opts[i].style.color = '#9ca3af';
+      opts[i].style.background = 'transparent';
     }
     input.nextElementSibling.style.borderColor = '#FACC15';
     input.nextElementSibling.style.color = '#FACC15';
@@ -768,46 +680,38 @@ footer p { color: var(--gray-500); font-size: 0.85rem; }
     var btn = document.getElementById('submit-btn');
     btn.textContent = 'Sending...';
     btn.disabled = true;
-
-    var formEl = document.getElementById('crewdesk-form');
+    var radio = document.querySelector('[name="start_now"]:checked');
     var data = {
       access_key: '1a886d4d-8213-44f3-af0f-7b68eedef5b1',
       subject: 'New CrewDesk Waitlist Signup!',
       from_name: 'CrewDesk Waitlist',
-      name: formEl.querySelector('[name="name"]').value,
-      email: formEl.querySelector('[name="email"]').value,
-      business: formEl.querySelector('[name="business"]').value,
-      contractors: formEl.querySelector('[name="contractors"]').value,
-      location: formEl.querySelector('[name="location"]').value,
-      start_now: (formEl.querySelector('[name="start_now"]:checked') || {}).value || ''
+      name: document.getElementById('f-name').value,
+      email: document.getElementById('f-email').value,
+      business: document.getElementById('f-business').value,
+      contractors: document.getElementById('f-contractors').value,
+      location: document.getElementById('f-location').value,
+      start_now: radio ? radio.value : ''
     };
-
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(data)
     })
     .then(function(res) { return res.json(); })
     .then(function(json) {
       if (json.success) {
-        formEl.style.display = 'none';
+        document.getElementById('crewdesk-form').style.display = 'none';
         document.getElementById('form-success').style.display = 'block';
       } else {
         btn.textContent = 'Something went wrong - try again';
         btn.disabled = false;
-        console.error('Web3Forms error:', json);
       }
     })
-    .catch(function(err) {
+    .catch(function() {
       btn.textContent = 'Something went wrong - try again';
       btn.disabled = false;
-      console.error('Fetch error:', err);
     });
   }
 </script>
-
 </body>
 </html>
